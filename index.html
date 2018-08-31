@@ -15,7 +15,7 @@
 
 <div id='map'></div>
 <script>
-mapboxgl.accessToken = '<your access token here>';
+mapboxgl.accessToken = 'pk.eyJ1IjoibWluZ3ppeWUiLCJhIjoiY2psaHU1dm4wMDV6eDNwbnZvZDRpbXJwdCJ9.kkHNex4YDMict9Ylcj6zxA';
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v9',
@@ -40,7 +40,7 @@ map.on('load', function() {
             // https://www.mapbox.com/mapbox-gl-js/style-spec/#expressions
 
             // Get the fill-extrusion-color from the source 'color' property.
-            'fill-extrusion-color': ['get', 'color'],
+            'fill-extrusion-color': {},
 
             // Get fill-extrusion-height from the source 'height' property.
             'fill-extrusion-height': ['get', 'height'],
